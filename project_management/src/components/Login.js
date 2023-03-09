@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./auth.css";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -10,9 +11,9 @@ function Login() {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      <form onSubmit={handleLogin}>
+    <div className="container">
+      <form className="form" onSubmit={handleLogin}>
+        <h1>Login</h1>
         <input
           type="email"
           placeholder="Email"
@@ -26,10 +27,10 @@ function Login() {
           onChange={event => setPassword(event.target.value)}
         />
         <button type="submit">Log in</button>
+        <p>
+          Don't have an account? <Link to="/signup">Sign up here</Link>
+        </p>
       </form>
-      <p>
-        Don't have an account? <Link to="/signup">Sign up here</Link>
-      </p>
     </div>
   );
 }
