@@ -16,11 +16,15 @@ function App() {
       <div className="container">
         <SideBar />
         <div className="content-container">
+          <div className="add-box">
+          
+            <span className="add-text">Create New</span>
+            <span className="add-icon">+</span>
+          </div>
           <Routes>
             <Route exact path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/" element={<div>
-              <h1>Welcome to my website!</h1><p>This is the content of my website.</p></div>} />
+            
             <Route path="/about" element={<About />} />
             <Route path="/product" element={<Product />} />
             <Route path="/dashboard" element={<Dashboard />} />
