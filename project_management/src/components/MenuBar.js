@@ -7,11 +7,7 @@ import './MenuBar.css';
 function MenuBar() {
     return (
       <div className="menu-bar">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
+        <h1>Project Management</h1>
       </div>
     );
   }
